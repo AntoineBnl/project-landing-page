@@ -1,97 +1,127 @@
 body {
-    margin: 0;
-    height: 100vh;
-    font-family: Roboto, sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header, .div-one, .footer {
+.header-wrapper, #footer {
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
-.header {
+.header-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 15%;
-    font-weight: bold;
-}
-
-.div-one {
-    flex: 1.3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 15%;
-    gap: 32px;
-}
-
-.img-placeholder {
-    width: 240px;
-    height: 120px;
-    background-color: #6D747D;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 10px;
 }
 
-.div-one-left {
-    font-weight: bold;
+#header {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    max-width: 1440px;
+    margin: 1rem 14rem 7rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#header-logo {
+    font-weight: 600;
     font-size: 24px;
 }
 
-.div-one-desc {
-    font-weight: normal;
-    font-size: 12px;
+#header-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+}
+
+#header-links > li {
     color: #E5E7EB;
 }
 
-.div-two {
-    flex: 1.5;
+#hero {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    gap: 2rem;
 }
 
-.div-two-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 32px;
+#hero-left, #hero-right {
+    flex: 1;
+}
+
+#hero-left h2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0;
+}
+
+#hero-left p {
+    color: #E5E7EB;
+}
+
+.btn1 {
+    background-color: #3882F6;
+    border-radius: 7px;
+    border: 2px solid #3882F6;
+    padding: 7px 32px;
+    color: #E5E7EB;
+}
+
+#hero-right {
+    display: flex;
+}
+
+.hero-image {
+    flex: 1;
+    object-fit: cover;
+    height: 230px;
+    border-radius: 7px;
+}
+
+#info-div {
+    padding: 48px 32px 96px;
+}
+
+#info-div-title {
+    font-weight: bolder;
+    font-size: 36px;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 .elements {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
     text-align: center;
 }
 
-.img-placeholder-2 {
-    width: 80px;
-    height: 80px;
-    border: 2px;
+.img-placeholder {
+    width: 160px;
+    height: 160px;
     border-radius: 10%;
-    border-color: #3882F6;
-    border-style: solid;
-    margin-bottom: 8px;
+    border: 4px solid #3882F6;
+    margin-bottom: 12px;
 }
 
 .info-text {
-    max-width: 80px;
+    max-width: 160px;
     color: #555;
     font-weight: bold;
-    font-size: 8px;
+    font-size: 16px;
 }
 
-.div-three {
-    flex: 1.3;
+#quote-div {
     background-color: #E5E7EB;
     color: #1F2937;
-    padding: 32px 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,50 +129,53 @@ body {
 }
 
 .big-quote {
-    max-width: 360px;
+    max-width: 760px;
     font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    margin: 128px 32px;
 }
 
 .quote-signature {
-    max-width: 400px;
     text-align: end;
-    padding-right: 2%;
+    font-style: normal;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 12px;
+    padding-right: 4%;
+    margin-top: 8px;
 }
 
-.div-four {
-    flex: 1;
+#card-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 64px;
 }
 
-.footer {
+#signup-card {
+    flex: 1;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 36px 36px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    max-width: 718px;
+}
+
+#signup-card h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+#signup-card .btn1 {
+    border-color: #E5E7EB;
+}
+
+#footer {
     display: flex;
     justify-content: center;
-    padding: 16px;
-    font-size: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 8px;
-}
-
-.btn1 {
-    background-color: #3882F6;
-    border-radius: 3px;
-    border: 0px;
-    padding: 3px 16px ;
-    color: #E5E7EB;
-}
-
-li {
-    font-size: 10px;
-    color: #E5E7EB;
-    font-weight: normal;
+    padding: 32px;
 }
